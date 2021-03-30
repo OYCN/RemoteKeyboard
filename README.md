@@ -1,15 +1,17 @@
 # RemoteKeyboard
 
-## Module
+> 用于将远端winPC设备的键盘通过服务器转发至本地
 
- - *server* : forward information
- - *sender* : listen keyboard information
- - *recver* : get key from server & simul it
- 
-## Third party Library/Package
+## 模块
 
- - *server* : None
- - *sender* : PyHook3, PyWin32
- - *recver* : [DD虚拟键盘虚拟鼠标](http://www.ddxoft.com/)
+ - *服务端* : 用于转发信息
+ - *发送端* : 监听键盘信息
+ - *接收端* : 从服务端获取信息，模拟执行
  
- ## The authentication function is not used, please close server in time after use
+## 第三方库
+
+ - *服务端* : 无
+ - *发送端* : PyHook3, PyWin32
+ - *接收端* : [DD虚拟键盘虚拟鼠标](http://www.ddxoft.com/)
+ 
+ ## 注意：code中的服务端未实现鉴权认证
